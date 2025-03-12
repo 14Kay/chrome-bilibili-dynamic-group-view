@@ -18,7 +18,7 @@
   "content_scripts": [
       {
           "matches": ["https://t.bilibili.com/*"],
-          "run_at":"document_end",
+          "run_at": "document_end",
           "js": ["js/dynamic.js"],
           "css": ["assets/dynamic.css"]
       }
@@ -26,13 +26,9 @@
   "permissions": [
       "storage"
     ],
-  "host_permissions": [
-    "https://t.bilibili.com/*",
-    "https://api.bilibili.com/"
-  ],
   "web_accessible_resources": [
       {
-        "resources": [ "js/core.js"],
+        "resources": ["js/core.js"],
         "matches": ["https://t.bilibili.com/*"]
       }
     ]
