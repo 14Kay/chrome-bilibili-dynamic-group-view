@@ -1,0 +1,26 @@
+.chorme-bili-tags{
+    height: 48px;
+    background-color: var(--bg1);
+    border-radius: 6px;
+    overflow-x: auto;
+}
+.chorme-bili-tags::-webkit-scrollbar {
+    display: none;
+}
+.chorme-bili-tags ul{
+    padding: 0;
+    position: relative;
+    padding: 0px 20px;
+    margin: 0;
+    display: flex;
+}
+
+.chorme-bili-tags ul li{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 16px;
+    height: 48px;
+    line-height: 48px;
+    flex-shrink: 0;
+}

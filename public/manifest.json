@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili Group View - B站动态分组浏览",
+  "description": "B站动态分组浏览",
+  "version": "1.0",
+
+  "options_ui": {
+    "page": "options.html"
+  },
+  "icons": {
+      "128": "assets/logo.png"
+  },
+  "action": {
+    "default_icon": "assets/logo.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+      {
+          "matches": ["https://t.bilibili.com/*"],
+          "run_at":"document_end",
+          "js": ["js/dynamic.js"],
+          "css": ["assets/dynamic.css"]
+      }
+  ],
+  "permissions": [
+      "storage"
+    ],
+  "host_permissions": [
+    "https://t.bilibili.com/*",
+    "https://api.bilibili.com/"
+  ],
+  "web_accessible_resources": [
+      {
+        "resources": [ "js/core.js"],
+        "matches": ["https://t.bilibili.com/*"]
+      }
+    ]
+}
