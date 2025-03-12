@@ -1,13 +1,12 @@
 {
-  "name": "chrome-extension-typescript-starter",
-  "type": "module",
+  "name": "chrome-bilibili-dynamic-group-view",
   "version": "1.0.0",
-  "description": "chrome-extension-typescript-starter",
-  "author": "",
+  "description": "chrome-bilibili-dynamic-group-view",
+  "author": "14Kay",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
+    "url": "https://github.com/14Kay/chrome-bilibili-dynamic-group-view.git"
   },
   "main": "index.js",
   "scripts": {
