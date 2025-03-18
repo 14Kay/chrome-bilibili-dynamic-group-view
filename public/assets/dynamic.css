@@ -3,6 +3,7 @@
     background-color: var(--bg1);
     border-radius: 6px;
     overflow-x: auto;
+    position: relative;
 }
 .chorme-bili-tags::-webkit-scrollbar {
     display: none;
@@ -23,4 +24,8 @@
     height: 48px;
     line-height: 48px;
     flex-shrink: 0;
+}
+
+.chorme-bili-tags .bili-dyn-list-tabs__highlight{
+    transform: translateX(28px);
 }

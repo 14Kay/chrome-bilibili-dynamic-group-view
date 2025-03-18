@@ -105,6 +105,13 @@ function addMouseWheelListener(element: HTMLElement) {
 	})
 }
 
+function highlightMove(left: number) {
+	const highlight = document.querySelector('.chorme-bili-tags > .bili-dyn-list-tabs__highlight') as HTMLElement
+	if (highlight) {
+		highlight.style.transform = `translateX(${left}px)`
+	}
+}
+
 async function main() {
 	const tags = await getTags()
 	const filterTags = tags.filter(item => item.count !== 0)
@@ -117,7 +124,9 @@ async function main() {
                 <li class='bili-dyn-list-tabs__item fs-medium active'>全部</li>
                 ${filterTags.map(item => `<li class='bili-dyn-list-tabs__item fs-medium'>${item.name}</li>`).join('')}
             </ul>
-        </div>`
+			<div class='bili-dyn-list-tabs__highlight'></div>
+        </div>
+		`
 
 	const tempDiv = document.createElement('div')
 	tempDiv.innerHTML = tagsHTML
@@ -157,6 +166,7 @@ function handleTagClick(event: Event, filterTags: { tagid: number, name: string,
 		target.classList.add('active')
 
 		const index = Array.from(ulElement.children).indexOf(target)
+		highlightMove(liElements[index].offsetLeft + (liElements[index].offsetWidth / 2) - 7)
 		if (index === 0) {
 			isObserve = false
 			dynamicCardObserver.disconnect()
