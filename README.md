@@ -21,6 +21,11 @@
 
 ## 🚀 安装指南
 
+### 商店安装 (推荐)
+
+1.  访问 [Chrome Web Store](https://chromewebstore.google.com/detail/bilibili-group-view-b%E7%AB%99%E5%8A%A8%E6%80%81%E5%88%86/edicmfdnmplcjddfegpeikeipfgabili)。
+2.  点击 **"Add to Chrome"** 按钮即可一键安装。
+
 ### 开发环境安装
 
 1.  **克隆项目**
