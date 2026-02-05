@@ -61,7 +61,7 @@ export class TagBar {
 			target.classList.add('active')
 
 			const index = Array.from(ulElement.children).indexOf(target)
-			this.highlightMove(liElements[index].offsetLeft + (liElements[index].offsetWidth / 2) - 14) // Adjusted offset for centering
+			this.highlightMove(liElements[index].offsetLeft + (liElements[index].offsetWidth / 2) - 7) // Adjusted offset for centering
 
 			// Get tag ID directly from logic or attribute
 			let tagId = 0

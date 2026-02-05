@@ -1,14 +1,35 @@
-.chrome-bili-tags{
+/* Default (Light) Theme */
+:root {
+    --c-bili-group-bg: #ffffff;
+    --c-bili-group-text: #61666d;
+    --c-bili-group-text-active: #00aeec;
+    --c-bili-group-hover: #f1f2f3;
+}
+
+/* Dark Theme - Bilibili uses .bili_dark class on html */
+html.bili_dark,
+html[data-dark-theme="true"] {
+    --c-bili-group-bg: #17181A;
+    --c-bili-group-text: #9499a0;
+    --c-bili-group-text-active: #32aeec;
+    --c-bili-group-hover: #333333;
+}
+
+.chrome-bili-tags {
     height: 48px;
-    background-color: var(--bg1);
+    background-color: var(--c-bili-group-bg);
     border-radius: 6px;
     overflow-x: auto;
     position: relative;
+    margin-bottom: 8px; /* Add some spacing */
+    transition: background-color 0.2s, color 0.2s;
 }
+
 .chrome-bili-tags::-webkit-scrollbar {
     display: none;
 }
-.chrome-bili-tags ul{
+
+.chrome-bili-tags ul {
     padding: 0;
     position: relative;
     padding: 0px 20px;
@@ -16,7 +37,7 @@
     display: flex;
 }
 
-.chrome-bili-tags ul li{
+.chrome-bili-tags ul li {
     list-style: none;
     display: inline-block;
     cursor: pointer;
@@ -24,8 +45,28 @@
     height: 48px;
     line-height: 48px;
     flex-shrink: 0;
+    font-size: 15px;
+    color: var(--c-bili-group-text);
+    transition: color 0.2s;
 }
 
-.chrome-bili-tags .bili-dyn-list-tabs__highlight{
-    transform: translateX(28px);
+.chrome-bili-tags ul li:hover {
+    color: var(--c-bili-group-text-active);
+}
+
+.chrome-bili-tags ul li.active {
+    color: var(--c-bili-group-text-active);
+    font-weight: bold;
+}
+
+.chrome-bili-tags .bili-dyn-list-tabs__highlight {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 14px; /* Estimated width */
+    height: 2px;
+    background-color: var(--c-bili-group-text-active);
+    border-radius: 2px;
+    transition: transform 0.2s ease-out;
+    transform: translateX(28px); /* Initial position */
 }
