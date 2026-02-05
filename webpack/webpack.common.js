@@ -8,6 +8,7 @@ module.exports = {
 		dynamic: path.join(srcDir, 'dynamic/index.ts'),
 		core: path.join(srcDir, 'dynamic/core.ts'),
 		popup: path.join(srcDir, 'popup.tsx'),
+		background: path.join(srcDir, 'background/index.ts'),
 	},
 	output: {
 		path: path.join(__dirname, '../dist/js'),

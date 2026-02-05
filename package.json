@@ -1,6 +1,7 @@
 {
   "name": "chrome-bilibili-dynamic-group-view",
-  "version": "1.0.0",
+  "version": "1.1.1",
+  "packageManager": "pnpm@9.15.1+sha1.abc117858086cb10ecb54828d180b035cb6c8fdd",
   "description": "chrome-bilibili-dynamic-group-view",
   "author": "14Kay",
   "license": "MIT",

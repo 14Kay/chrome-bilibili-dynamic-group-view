@@ -1,14 +1,14 @@
-.chorme-bili-tags{
+.chrome-bili-tags{
     height: 48px;
     background-color: var(--bg1);
     border-radius: 6px;
     overflow-x: auto;
     position: relative;
 }
-.chorme-bili-tags::-webkit-scrollbar {
+.chrome-bili-tags::-webkit-scrollbar {
     display: none;
 }
-.chorme-bili-tags ul{
+.chrome-bili-tags ul{
     padding: 0;
     position: relative;
     padding: 0px 20px;
@@ -16,7 +16,7 @@
     display: flex;
 }
 
-.chorme-bili-tags ul li{
+.chrome-bili-tags ul li{
     list-style: none;
     display: inline-block;
     cursor: pointer;
@@ -26,6 +26,6 @@
     flex-shrink: 0;
 }
 
-.chorme-bili-tags .bili-dyn-list-tabs__highlight{
+.chrome-bili-tags .bili-dyn-list-tabs__highlight{
     transform: translateX(28px);
 }
