@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Bilibili Group View - B站动态分组浏览",
   "description": "B站动态分组浏览",
-  "version": "1.1.1",
+  "version": "1.1.2",
 
   "options_ui": {
     "page": "options.html"
