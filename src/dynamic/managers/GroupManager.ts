@@ -66,10 +66,7 @@ export class GroupManager {
 		const inject = () => {
 			const selectors = [
 				'.bili-dyn-list',
-				'.bili-dyn-home--member',
-				'main.bili-dyn-home',
-				'.bili-dyn-content', // Fallback
-				'div[class^="bili-dyn-list"]', // Fuzzy match
+				'div[class^="bili-dyn-list"]',
 			]
 
 			let targetNode: Element | null = null
